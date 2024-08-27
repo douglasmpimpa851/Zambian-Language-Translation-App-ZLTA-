@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { project_name_backend } from 'declarations/project_name_backend';
+import { zlta_backend } from 'declarations/zlta_backend';
 
 function App() {
   const [greeting, setGreeting] = useState('');
@@ -7,7 +7,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     const name = event.target.elements.name.value;
-    project_name_backend.greet(name).then((greeting) => {
+    zlta_backend.greet(name).then((greeting) => {
       setGreeting(greeting);
     });
     return false;

@@ -1,18 +1,18 @@
 {
   "canisters": {
     "project_name_backend": {
-      "main": "src/project_name_backend/main.mo",
+      "main": "src/zlta_backend/main.mo",
       "type": "motoko"
     },
     "project_name_frontend": {
       "dependencies": [
-        "project_name_backend"
+        "zlta_backend"
       ],
       "source": [
-        "src/project_name_frontend/dist"
+        "src/zlta_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "project_name_frontend"
+      "workspace": "zlta_frontend"
     }
   },
   "defaults": {
