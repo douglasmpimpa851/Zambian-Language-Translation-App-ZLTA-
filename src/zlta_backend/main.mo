@@ -9,7 +9,7 @@ actor TranslationModule {
     // Initializing an empty HashMap
     let dictionary : HashMap.HashMap<Text, Text> = HashMap.HashMap<Text, Text>(Text.equal, Text.hash);
 
-    // Populate the dictionary with English to Tonga translations
+    // Populating the dictionary with English to Tonga translations
     do {
         Array.iterate<(Text, Text)>([
             ("hello", "mooni"),
@@ -20,7 +20,7 @@ actor TranslationModule {
             ("no", "peepe"),
             ("good morning", "mwabuka buti"),
             ("goodnight", "moone kabotu"),
-            // Add more translations as needed
+            // translations 
         ], func(entry : (Text, Text)) {
             dictionary.put(entry.0, entry.1);
         });
