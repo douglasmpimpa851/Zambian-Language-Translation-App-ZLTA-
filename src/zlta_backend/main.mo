@@ -12,9 +12,9 @@ actor TranslationModule {
     // Populating the dictionary with English to Tonga translations
     do {
         Array.iterate<(Text, Text)>([
-            ("hello", "mooni"),
+            ("hello", "hodi"),
             ("goodbye", ""),
-            ("please", "ndakomba"),
+            ("please", "akaaka"),
             ("thank you", "ndalumba"),
             ("yes", "inzya"),
             ("no", "peepe"),
